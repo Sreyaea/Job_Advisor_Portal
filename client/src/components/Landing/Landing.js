@@ -9,7 +9,7 @@ const Landing = () => {
     <section className="home">
       <div className="description">
         <h1 className="title">
-          <span className="gradient-text">Find Jobs easily</span> with the Best
+          <span className="gradient-text">Be Seen</span> <br/><br/><span className="gradient-text">Be Heard</span><br/><br/><span className="gradient-text">Be Hired</span>
         </h1>
         {/* <p className="paragraph">
           Find Jobs easily
