@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import JobSeekerLogin from './pages/JobSeekerLogin/JobSeekerLogin';
 import CompanyLogin from './pages/CompanyLogin/CompanyLogin';
 import SignUp from './pages/SignUp/SignUp';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import './App.css'
 
 
