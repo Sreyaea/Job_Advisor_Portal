@@ -26,7 +26,7 @@ const CompanyLogin = () => {
           alert("password has left Blank!");
         }
         else{
-            axios.post('http://127.0.0.1:5000/teacherlogin', {
+            axios.post('http://127.0.0.1:5000/login', {
                 email: email,
                 password: password
             })
@@ -36,7 +36,7 @@ const CompanyLogin = () => {
                 console.log(response);
                 //console.log(response.data);
                 console.log('teacherupload');
-                navigate("/teacherupload");
+                navigate("/");
             })
             .catch(function (error) {
                 console.log(error, 'error');

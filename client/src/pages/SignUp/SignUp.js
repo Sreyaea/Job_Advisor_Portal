@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
+//import '@fortawesome/fontawesome-free/css/all.css';
 import './SignUp.css'
 
 const SignUp = () => {
@@ -9,8 +10,8 @@ const SignUp = () => {
     const [username,setUsername] = useState('');
     const [email,setEmail] = useState('');
     const [role,setRole] = useState('');
-    const [classid,setClassid] = useState('');
-    const [rollid,setRollid] = useState('');
+//    const [classid,setClassid] = useState('');
+//    const [rollid,setRollid] = useState('');
     const [password,setPassword] = useState('');
 
     const navigate = useNavigate();
@@ -21,8 +22,8 @@ const SignUp = () => {
             username: username,
             email: email,
             role: role,
-            classid: classid,
-            rollid: rollid,
+//            classid: classid,
+//            rollid: rollid,
             password: password
         })
         .then(function (response) {
@@ -67,9 +68,9 @@ const SignUp = () => {
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
                     <select value={role} onChange={(e) => setRole(e.target.value)} className="form-select form-select-lg" aria-label="Select Role">
                        <option value="">Select Role</option>
-                       <option value="student">Admin</option>
-                       <option value="teacher">Company</option>
-                       <option value="teacher">Student</option>
+                       <option value="admin">Admin</option>
+                       <option value="company">Company</option>
+                       <option value="jobseeker">Job Seeker</option>
 
                      </select>
                      

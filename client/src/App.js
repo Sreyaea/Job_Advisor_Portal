@@ -43,7 +43,7 @@ const router = createBrowserRouter([
    
   },
   {
-    path:"/Companylogin",
+    path:"/login",
     element:<CompanyLogin/>
   },
   {

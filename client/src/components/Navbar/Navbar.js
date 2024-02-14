@@ -1,5 +1,8 @@
 import './Navbar.css'
-  
+// import { Link } from 'react-router-dom';
+//          <Link to="/JobSeekerLogin"><li><a href="#">Login</a></li></Link>
+//           <Link to="/signup"><li><a href="#">SignUp</a></li></Link>
+
   function Navbar() {
     return (
       // <header>
@@ -37,8 +40,8 @@ import './Navbar.css'
           <li><a href="#">About</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">SignUp</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="signup">SignUp</a></li>
 
 
         </ul>
