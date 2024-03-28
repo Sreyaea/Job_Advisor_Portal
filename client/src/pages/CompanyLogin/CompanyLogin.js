@@ -80,7 +80,7 @@ const CompanyLogin = () => {
                     <span>or use your account</span>
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  />
-                    <a href="#" style={{fontSize:"12px"}}>Forgot your password?</a>
+                    <a href="/forgetpassword" style={{fontSize:"12px"}}>Forgot your password?</a>
                     <button style={{marginTop:"5px"}} onClick={(e) => { e.preventDefault();  logInUser(); }} >Login</button>
                 </form>
             </div>

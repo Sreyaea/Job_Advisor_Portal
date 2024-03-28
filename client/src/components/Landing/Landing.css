@@ -155,16 +155,31 @@ html {
 
 .main-content {
     /* margin-top: 100px; */
-    /* display: flex; */
-    
+    display: flex;
+    /* margin: 0 auto; */
     background: #0B1D26ff;
     margin-top: -14.1%;
     color: #fff;
     padding: 120px;
+    align-items: center;
   }
   
   
+  .main-content a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    font-family: initial;
+
+    border-radius: 20px;
+    /* font-size: clamp(0.9rem, 6vw, 1rem); */
+  }
   
+  .main-content a:hover,
+  .main-content a.active {
+    background: #12372A;
+    color: #fff;
+  }
   
   .guide {
     margin-top: 150px;
@@ -176,6 +191,10 @@ html {
     /* margin-bottom: 7em; */
     z-index: 10;
   }
+  /* .guides_content container{
+    margin-left: 50px;
+    width: 1068px;
+  } */
   .guide:nth-of-type(2n) .guide_description {
     order: 2;
   }

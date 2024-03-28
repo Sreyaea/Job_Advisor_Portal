@@ -50,12 +50,12 @@ const Landing = () => {
 
     <section className="main-content">
       <section className="guides">
-        <div className="guides_content container">
+        <div className="guides_content landingcontainer">
           <div className="guide" id="guide1">
             <div className="guide_description">
               <div className="guide_number">01</div>
               <p className="hero_pre-text">get started</p>
-              <h1>Search For Job</h1>
+              <h1><a href="jobs">Search For Job</a></h1>
               <div className="guide_text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </div>
 
             </div>

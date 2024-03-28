@@ -12,6 +12,10 @@ import SignUp from './pages/SignUp/SignUp';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
+import RecommendedJobs from './pages/RecommendedJobs/RecommendedJobs';
+import ForgetPassword from './pages/JobSeekerLogin/ForgetPassword';
+import CompanyHome from './pages/CompanyHome/CompanyHome';
+import CompanyAddJob from './pages/CompanyAddJob/CompanyAddJob';
 
 
 function Layout() {
@@ -53,6 +57,22 @@ const router = createBrowserRouter([
   {
     path:"/signup",
     element:<SignUp/>
+  },
+  {
+    path:"/jobs",
+    element:<RecommendedJobs/>
+  },
+  {
+    path:"/forgetpassword",
+    element:<ForgetPassword/>
+  },
+  {
+    path:"/companyhome",
+    element:<CompanyHome/>
+  },
+  {
+    path:"/companyform",
+    element:<CompanyAddJob/>
   }
 
 ]);

@@ -9,11 +9,21 @@ from models import db, User, JobSeeker, Company
 from werkzeug.utils import secure_filename
 import os
 from flask import send_file
+from flask_mail import Mail, Message
+from itsdangerous import URLSafeTimedSerializer
+from flask import request, jsonify
 
 import subprocess
 import sqlite3
 
 app = Flask(__name__)
+
+mail = Mail(app)
+app.config['MAIL_SERVER'] = 'smtp.example.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = 'your-email@example.com'
+app.config['MAIL_PASSWORD'] = 'your-email-password'
 
 app.config['SECRET_KEY'] = 'jobadvisor-portal-app'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///jobadv.db'
@@ -119,6 +129,7 @@ def login():
         "email": user.email,
         # "classid": user.classid
     })
+
 
 
 
